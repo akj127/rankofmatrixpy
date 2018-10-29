@@ -1,19 +1,20 @@
 #Akhil Jarodia 2017130 B1
 #Nakul Gupta 2017068 B1
-def swapRows(A,row1,col,row2):
+def swapRows(A,Row1,col,Row2):
 	i=0
 	while i<col:
-		a=A[row1][i]
-		A[row1][i]=A[row2][i]
-		A[row2][i]=a
+		a=A[Row1][i]
+		A[Row1][i]=A[Row2][i]
+		A[Row2][i]=a
 		i+=1
 		
 	return A
 
-def Row_Transformation(A,x,row1,row2):
+def Row_Transformation(A,x,Row1,Row2):
 	i=0
 	while i<len(A[0]):
-		A[row2][i]=A[row2][i]+(x*A[row1][i])		
+		print(A)
+		A[Row2][i]=A[Row2][i]+(x*A[Row1][i])		
 		i+=1
 		
 	return A
@@ -45,19 +46,22 @@ def MatrixRank(a):
 					r+=1
 			i-=1		
 		i+=1
-
+		print(i)
 	return rank
+
+
+
 
 
 
 if __name__ == '__main__':
 	
 
-	row=int(input("Enter no of rows:"))
+	Row=int(input("Enter no of Rows:"))
 
-	print("Enter elements of matrix row wise:")
+	print("Enter elements of matrix Row wise:")
 	az=[]
-	for i in range(row):
+	for i in range(Row):
 		a=input().split()
 		a=list(map(int,a))
 		az.append(a)
