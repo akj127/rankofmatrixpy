@@ -19,7 +19,7 @@ def Row_Transformation(A,x,Row1,Row2):
 		
 	return A
 
-def MatrixRank(a):
+def matrixRank(a):
 	rank=len(a[0])
 	i=0
 	while i<rank:
@@ -65,4 +65,4 @@ if __name__ == '__main__':
 		a=input().split()
 		a=list(map(int,a))
 		az.append(a)
-	MatrixRank(az)
+	matrixRank(az)
