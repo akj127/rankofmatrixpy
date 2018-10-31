@@ -1,5 +1,6 @@
 #Akhil Jarodia 2017130 B1
 #Nakul Gupta 2017068 B1
+# A program to find a rank of matrix
 def swapRows(A,row1,col,row2):
 	i=0
 	while i<col:
